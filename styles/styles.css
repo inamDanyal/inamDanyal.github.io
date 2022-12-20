@@ -4,6 +4,8 @@ body {
     background-color: black;
     margin: 0rem;
     overflow: hidden;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #Track > .image {
@@ -15,11 +17,11 @@ body {
 
 #Track {
     display: flex;
-    gap: 4vmin;
+    gap: 2vmin;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .noSelect {
@@ -31,6 +33,27 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
 .noSelect:focus {
     outline: none !important;
+}
+
+.navbar > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar > ul > li {
+    
+    margin-top: 2vh;
+    padding: 1vh;
+    float: left;
+}
+
+.navbar > ul > li > a {
+    color: white;
+    text-decoration: none;
+    
 }

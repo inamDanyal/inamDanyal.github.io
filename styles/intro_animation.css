@@ -1,0 +1,32 @@
+#Track > .one, .three, .five {
+
+    animation: transition1 1.5s infinite;
+}
+
+#Track > .two, .four {
+
+    animation: transition2 1.5s infinite;
+}
+
+@keyframes transition1 {
+
+    from {
+        
+        transform: translate(-50%, -20%);
+    }
+
+    to {
+        transform: translate(-50%, 20%);
+    }
+}
+
+@keyframes transition2 {
+
+    from {
+        transform: translate(-50%, 20%);
+    }
+
+    to { 
+        transform: translate(-50%, -20%);
+    }
+}
