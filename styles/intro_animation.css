@@ -1,32 +1,66 @@
 #Track > .one, .three, .five {
 
-    animation: transition1 1.5s infinite;
+    animation: transition1 1.3s infinite;
+
+    /* animation-name: transition1;
+    animation-duration: 1.3;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s; */
 }
 
 #Track > .two, .four {
 
-    animation: transition2 1.5s infinite;
+    animation: transition2 1.3s infinite;
+
+    /* animation-name: transition2;
+    animation-duration: 1.3s infinite;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s; */
+}
+/* 
+#Track {
+    animation-name: startingPos;
+    animation-duration: 1.3s;
+    animation-delay: 1.3s;
+} */
+
+@keyframes startingPos {
+    from {
+        transform: translate(-50%, -50%)
+    }
+
+    to {
+        transform: translate(0%, -50%)
+    }
 }
 
 @keyframes transition1 {
 
-    from {
-        
-        transform: translate(-50%, -20%);
+    0% {
+        transform: translate(0%, -20%);
     }
 
-    to {
-        transform: translate(-50%, 20%);
+    50% { 
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, -20%);
     }
 }
 
 @keyframes transition2 {
 
-    from {
-        transform: translate(-50%, 20%);
+    0% {
+        transform: translate(0%, 20%);
     }
 
-    to { 
-        transform: translate(-50%, -20%);
+    50% { 
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, 20%);
     }
 }
+
